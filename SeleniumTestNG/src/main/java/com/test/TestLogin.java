@@ -18,6 +18,7 @@ public class TestLogin {
 		driver=SeleniumUtil.getDriver("chrome",".//driver/chromedriver.exe");
 		
 		SeleniumUtil.openBrowser("http://localhost:8080/CRM/");
+		
 	}
 	
 	/**
