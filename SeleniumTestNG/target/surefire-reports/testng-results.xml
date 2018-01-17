@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestCRM" duration-ms="1619" started-at="2018-01-16T09:25:44Z" finished-at="2018-01-16T09:25:45Z">
+    <groups>
+      <group name="userManage">
+        <method signature="TestUserManagement.userManage()[pri:0, instance:com.test.TestUserManagement@3a82f6ef]" name="userManage" class="com.test.TestUserManagement"/>
+      </group> <!-- userManage -->
+      <group name="login">
+        <method signature="TestLogin.loginCRM()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="loginCRM" class="com.test.TestLogin"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="Test" duration-ms="1619" started-at="2018-01-16T09:25:44Z" finished-at="2018-01-16T09:25:45Z">
+      <class name="com.test.TestLogin">
+        <test-method status="PASS" signature="getdriver()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="getdriver" is-config="true" duration-ms="2798" started-at="2018-01-16T17:25:41Z" finished-at="2018-01-16T17:25:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getdriver -->
+        <test-method status="PASS" signature="loginCRM()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="loginCRM" duration-ms="301" started-at="2018-01-16T17:25:44Z" finished-at="2018-01-16T17:25:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCRM -->
+      </class> <!-- com.test.TestLogin -->
+      <class name="com.test.TestUserManagement">
+        <test-method status="PASS" signature="userManage()[pri:0, instance:com.test.TestUserManagement@3a82f6ef]" name="userManage" duration-ms="747" depends-on-groups="login" started-at="2018-01-16T17:25:44Z" finished-at="2018-01-16T17:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userManage -->
+      </class> <!-- com.test.TestUserManagement -->
+      <class name="com.test.TestAssignRole">
+        <test-method status="PASS" signature="assignRole()[pri:0, instance:com.test.TestAssignRole@100fc185]" name="assignRole" duration-ms="534" depends-on-groups="userManage, login" started-at="2018-01-16T17:25:45Z" finished-at="2018-01-16T17:25:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignRole -->
+      </class> <!-- com.test.TestAssignRole -->
+    </test> <!-- Test -->
+  </suite> <!-- TestCRM -->
+</testng-results>

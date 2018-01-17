@@ -11,8 +11,17 @@ public class TestUserManagement {
 	 */
 	@Test(dependsOnGroups="login")
 	public void userManage() {
+		//展开系统管理菜单，加载用户管理菜单
 		SeleniumUtil.clickByXpath("//*[@id=\"_easyui_tree_1\"]/span[1]");
-		SeleniumUtil.clickByXpath("//*[@id=\"_easyui_tree_10\"]/span[4]");	
+		//等待两秒，避免元素还未来得及出现
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//点击用户管理菜单，出现用户管理页面
+		SeleniumUtil.clickByXpath("//*[@id=\"_easyui_tree_10\"]/span[4]");//*[@id="_easyui_tree_10"]/span[4]	
 		//切换窗口至用户管理页面
 		SeleniumUtil.toFrameByXpath("//*[@id=\"tabs\"]/div[2]/div[2]/div/iframe");
 		
