@@ -1,6 +1,5 @@
 package com.test;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -26,9 +25,9 @@ public class TestLogin {
 	 */
 	@Test
 	public void loginCRM() {
-		SeleniumUtil.sendValue(By.cssSelector("input[name='username']"), "zhangsan001");
-		SeleniumUtil.sendValue(By.cssSelector("input[name='password']"), "zhangsan001");
-		SeleniumUtil.doClick(By.cssSelector("#loginForm > p.submit > input[type=\"submit\"]"));
+		SeleniumUtil.sendKeyByCss("input[name='username']", "zhangsan001");
+		SeleniumUtil.sendKeyByCss("input[name='password']", "zhangsan001");
+		SeleniumUtil.clickByCss("#loginForm > p.submit > input[type=\"submit\"]");
 	}
 	
 	

@@ -9,7 +9,7 @@ public class TestAssignRole {
 	/**
 	 * 进行角色分配操作
 	 */
-	@Test(dependsOnGroups= {"login","userManage"})
+	@Test(groups="assignRole",dependsOnGroups= {"login","userManage"})
 	public void assignRole() {
 		//选择要分配角色的用户
 		SeleniumUtil.clickByXpath("//*[@id=\"datagrid-row-r1-2-5\"]");

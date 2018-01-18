@@ -62,8 +62,8 @@ public class SeleniumUtil extends InitDriver {
 	public static WebElement getElement(long timeout, final By by) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);
 		// 若超时则抛出异常，故可以在此捕获异常
-		return wait.until(new ExpectedCondition<WebElement>() {
 
+		return wait.until(new ExpectedCondition<WebElement>() {
 			public WebElement apply(WebDriver driver) {
 				return driver.findElement(by);
 			}
@@ -363,12 +363,61 @@ public class SeleniumUtil extends InitDriver {
 	 * @param value
 	 *            待输入的内容
 	 */
-	public static void sendValue(By by, String value) {
+	public static void sendKey(By by,String value) {
 		WebElement text = getElement(by);
 		text.clear();
 		text.sendKeys(value);
 	}
-
+	/**
+	 * 通过id定位文本框且输入内容
+	 * @param id 文本框的id属性
+	 * @param value 待输入的内容
+	 */
+	public static void sendKeyById(String id,String value) {
+		WebElement text = byId(id);
+		text.clear();
+		text.sendKeys(value);
+	}
+	/**
+	 * 通过name属性定位文本框且输入内容
+	 * @param name 文本框的name属性
+	 * @param value 待输入的内容
+	 */
+	public static void sendKeyBy(String name, String value) {
+		WebElement text = byName(name);
+		text.clear();
+		text.sendKeys(value);
+	}
+	/**
+	 * 通过class属性定位文本框且输入内容
+	 * @param className 文本框的class属性
+	 * @param value 待输入的内容
+	 */
+	public static void sendKeyByClass(String className,String value) {
+		WebElement text =byClassName(className);
+		text.clear();
+		text.sendKeys(value);
+	}
+	/**
+	 * 通过xpath定位文本框且输入内容
+	 * @param xpath 文本框的xpath
+	 * @param value 待输入的内容
+	 */
+	public static void sendKeyByXpath(String xpath, String value) {
+		WebElement text = byXpath(xpath);
+		text.clear();
+		text.sendKeys(value);
+	}
+	/**
+	 * 通过css选择器定位文本框且输入内容
+	 * @param cssSelector 文本框的css选择器
+	 * @param value 待输入的内容
+	 */
+	public static void sendKeyByCss(String cssSelector, String value) {
+		WebElement text = byCssSelector(cssSelector);
+		text.clear();
+		text.sendKeys(value);
+	}
 	/**
 	 * 获取文本框的内容
 	 * 
@@ -743,7 +792,6 @@ public class SeleniumUtil extends InitDriver {
 		// 若超时则抛出异常，故可以在此捕获异常
 		try {
 			flag = wait.until(new ExpectedCondition<Boolean>() {
-				
 				public Boolean apply(WebDriver driver) {
 					return driver.findElement(by).isDisplayed();
 				}
