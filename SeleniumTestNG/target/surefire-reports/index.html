@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestCRM">
-              <span class="suite-name border-failed">TestCRM</span>
+              <span class="suite-name border-skipped">TestCRM</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestCRM" class="hide-methods failed suite-TestCRM"> (hide)</a> <!-- hide-methods failed suite-TestCRM -->
-                      <a href="#" panel-name="suite-TestCRM" class="show-methods failed suite-TestCRM"> (show)</a> <!-- show-methods failed suite-TestCRM -->
-                    </span>
-                    <div class="method-list-content failed suite-TestCRM">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestSearchRole" hash-for-method="searchByFunc">searchByFunc</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestCRM -->
+                    <span class="method-stats">6 methods,  6 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -116,39 +102,35 @@
                     <div class="method-list-content skipped suite-TestCRM">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestSearchRole" hash-for-method="searchByRoleName">searchByRoleName</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TestCRM -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TestCRM" class="hide-methods passed suite-TestCRM"> (hide)</a> <!-- hide-methods passed suite-TestCRM -->
-                      <a href="#" panel-name="suite-TestCRM" class="show-methods passed suite-TestCRM"> (show)</a> <!-- show-methods passed suite-TestCRM -->
-                    </span>
-                    <div class="method-list-content passed suite-TestCRM">
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestAssignRole" hash-for-method="assignRole">assignRole</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestLogin" hash-for-method="loginCRM">loginCRM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestRoleManagement" hash-for-method="roleManage">roleManage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestSearchRole" hash-for-method="searchByFunc">searchByFunc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestSearchRole" hash-for-method="searchByRoleName">searchByRoleName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestCRM" title="com.test.TestUserManagement" hash-for-method="userManage">userManage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-TestCRM -->
+                    </div> <!-- method-list-content skipped suite-TestCRM -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -160,66 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestCRM" class="panel TestCRM">
-          <div class="suite-TestCRM-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.test.TestSearchRole</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchByFunc">
-                  </a> <!-- searchByFunc -->
-                  <span class="method-name">searchByFunc</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: element not visible
-  (Session info: chrome=63.0.3239.108)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;ZJEH-PC&apos;, ip: &apos;10.5.77.130&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}
-Session ID: 5e803635d59b8373d9a988086ed330c2
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at com.selenium.test.base.SeleniumUtil.doClick(SeleniumUtil.java:274)
-	at com.selenium.test.base.SeleniumUtil.inputSelect(SeleniumUtil.java:653)
-	at com.test.TestSearchRole.searchByFunc(TestSearchRole.java:18)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-failed -->
           <div class="suite-TestCRM-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.test.TestSearchRole</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchByRoleName">
-                  </a> <!-- searchByRoleName -->
-                  <span class="method-name">searchByRoleName</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestSearchRole.searchByRoleName()[pri:0, instance:com.test.TestSearchRole@7f9a81e8] depends on not successfully finished methods
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-skipped -->
-          <div class="suite-TestCRM-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.test.TestRoleManagement</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -228,13 +153,16 @@ Session ID: 5e803635d59b8373d9a988086ed330c2
                   <a name="roleManage">
                   </a> <!-- roleManage -->
                   <span class="method-name">roleManage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestRoleManagement.roleManage()[pri:0, instance:com.test.TestRoleManagement@396a51ab] depends on not successfully finished methods in group &quot;assignRole&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-passed -->
-          <div class="suite-TestCRM-class-passed">
+          </div> <!-- suite-TestCRM-class-skipped -->
+          <div class="suite-TestCRM-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.test.TestUserManagement</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -243,13 +171,16 @@ Session ID: 5e803635d59b8373d9a988086ed330c2
                   <a name="userManage">
                   </a> <!-- userManage -->
                   <span class="method-name">userManage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestUserManagement.userManage()[pri:0, instance:com.test.TestUserManagement@36d4b5c] depends on not successfully finished methods in group &quot;login&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-passed -->
-          <div class="suite-TestCRM-class-passed">
+          </div> <!-- suite-TestCRM-class-skipped -->
+          <div class="suite-TestCRM-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.test.TestLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -258,13 +189,75 @@ Session ID: 5e803635d59b8373d9a988086ed330c2
                   <a name="loginCRM">
                   </a> <!-- loginCRM -->
                   <span class="method-name">loginCRM</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;ZJEH-PC&apos;, ip: &apos;10.5.77.130&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: InitDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.selenium.test.base.InitDriver.getDriver(InitDriver.java:37)
+	at com.test.TestLogin.getdriver(TestLogin.java:17)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-passed -->
-          <div class="suite-TestCRM-class-passed">
+          </div> <!-- suite-TestCRM-class-skipped -->
+          <div class="suite-TestCRM-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">com.test.TestSearchRole</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByFunc">
+                  </a> <!-- searchByFunc -->
+                  <span class="method-name">searchByFunc</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestSearchRole.searchByFunc()[pri:0, instance:com.test.TestSearchRole@7f9a81e8] depends on not successfully finished methods in group &quot;roleManage&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByRoleName">
+                  </a> <!-- searchByRoleName -->
+                  <span class="method-name">searchByRoleName</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestSearchRole.searchByRoleName()[pri:0, instance:com.test.TestSearchRole@7f9a81e8] depends on not successfully finished methods in group &quot;roleManage&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestCRM-class-skipped -->
+          <div class="suite-TestCRM-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.test.TestAssignRole</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -273,10 +266,13 @@ Session ID: 5e803635d59b8373d9a988086ed330c2
                   <a name="assignRole">
                   </a> <!-- assignRole -->
                   <span class="method-name">assignRole</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TestAssignRole.assignRole()[pri:0, instance:com.test.TestAssignRole@6d00a15d] depends on not successfully finished methods in group &quot;userManage&quot;
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestCRM-class-passed -->
+          </div> <!-- suite-TestCRM-class-skipped -->
         </div> <!-- panel TestCRM -->
         <div panel-name="test-xml-TestCRM" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -371,34 +367,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userManage')
-data.setCell(0, 2, 'com.test.TestUserManagement')
-data.setCell(0, 3, 2759);
+data.setCell(0, 1, 'searchByFunc')
+data.setCell(0, 2, 'com.test.TestSearchRole')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'assignRole')
-data.setCell(1, 2, 'com.test.TestAssignRole')
-data.setCell(1, 3, 596);
+data.setCell(1, 1, 'userManage')
+data.setCell(1, 2, 'com.test.TestUserManagement')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'roleManage')
-data.setCell(2, 2, 'com.test.TestRoleManagement')
-data.setCell(2, 3, 352);
+data.setCell(2, 1, 'assignRole')
+data.setCell(2, 2, 'com.test.TestAssignRole')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginCRM')
-data.setCell(3, 2, 'com.test.TestLogin')
-data.setCell(3, 3, 315);
+data.setCell(3, 1, 'roleManage')
+data.setCell(3, 2, 'com.test.TestRoleManagement')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchByFunc')
+data.setCell(4, 1, 'searchByRoleName')
 data.setCell(4, 2, 'com.test.TestSearchRole')
-data.setCell(4, 3, 203);
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'searchByRoleName')
-data.setCell(5, 2, 'com.test.TestSearchRole')
+data.setCell(5, 1, 'loginCRM')
+data.setCell(5, 2, 'com.test.TestLogin')
 data.setCell(5, 3, 0);
 window.suiteTableData['TestCRM']= { tableData: data, tableDiv: 'times-div-TestCRM'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-TestCRM">
               </div> <!-- times-div-TestCRM -->
             </div> <!-- times-div -->
@@ -425,44 +421,16 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TestLogin</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginCRM</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getdriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="test-method">
-                <span class="method-name">loginCRM</span>
-                <span class="method-start">2759 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TestUserManagement</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">userManage</span>
-                <span class="method-start">3077 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TestAssignRole</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">assignRole</span>
-                <span class="method-start">5837 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TestRoleManagement</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">roleManage</span>
-                <span class="method-start">6434 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TestSearchRole</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">searchByFunc</span>
-                <span class="method-start">6787 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
