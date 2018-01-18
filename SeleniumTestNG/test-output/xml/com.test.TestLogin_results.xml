@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.313">
+           time="0.323">
   <properties />
   
   
-            <testcase name="loginCRM" time="0.313" classname="com.test.TestLogin" />
+            <testcase name="loginCRM" time="0.323" classname="com.test.TestLogin" />
       
 </testsuite>
