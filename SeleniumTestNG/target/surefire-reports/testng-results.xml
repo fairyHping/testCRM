@@ -1,39 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TestCRM" duration-ms="1619" started-at="2018-01-16T09:25:44Z" finished-at="2018-01-16T09:25:45Z">
+  <suite name="TestCRM" duration-ms="4247" started-at="2018-01-18T08:30:14Z" finished-at="2018-01-18T08:30:18Z">
     <groups>
+      <group name="assignRole">
+        <method signature="TestAssignRole.assignRole()[pri:0, instance:com.test.TestAssignRole@6d00a15d]" name="assignRole" class="com.test.TestAssignRole"/>
+      </group> <!-- assignRole -->
       <group name="userManage">
-        <method signature="TestUserManagement.userManage()[pri:0, instance:com.test.TestUserManagement@3a82f6ef]" name="userManage" class="com.test.TestUserManagement"/>
+        <method signature="TestUserManagement.userManage()[pri:0, instance:com.test.TestUserManagement@36d4b5c]" name="userManage" class="com.test.TestUserManagement"/>
       </group> <!-- userManage -->
       <group name="login">
-        <method signature="TestLogin.loginCRM()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="loginCRM" class="com.test.TestLogin"/>
+        <method signature="TestLogin.loginCRM()[pri:0, instance:com.test.TestLogin@2ef5e5e3]" name="loginCRM" class="com.test.TestLogin"/>
       </group> <!-- login -->
+      <group name="roleManage">
+        <method signature="TestRoleManagement.roleManage()[pri:0, instance:com.test.TestRoleManagement@396a51ab]" name="roleManage" class="com.test.TestRoleManagement"/>
+      </group> <!-- roleManage -->
     </groups>
-    <test name="Test" duration-ms="1619" started-at="2018-01-16T09:25:44Z" finished-at="2018-01-16T09:25:45Z">
+    <test name="TestUser" duration-ms="4247" started-at="2018-01-18T08:30:14Z" finished-at="2018-01-18T08:30:18Z">
       <class name="com.test.TestLogin">
-        <test-method status="PASS" signature="getdriver()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="getdriver" is-config="true" duration-ms="2798" started-at="2018-01-16T17:25:41Z" finished-at="2018-01-16T17:25:44Z">
+        <test-method status="PASS" signature="getdriver()[pri:0, instance:com.test.TestLogin@2ef5e5e3]" name="getdriver" is-config="true" duration-ms="2749" started-at="2018-01-18T16:30:11Z" finished-at="2018-01-18T16:30:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdriver -->
-        <test-method status="PASS" signature="loginCRM()[pri:0, instance:com.test.TestLogin@6cc4c815]" name="loginCRM" duration-ms="301" started-at="2018-01-16T17:25:44Z" finished-at="2018-01-16T17:25:44Z">
+        <test-method status="PASS" signature="loginCRM()[pri:0, instance:com.test.TestLogin@2ef5e5e3]" name="loginCRM" duration-ms="315" started-at="2018-01-18T16:30:14Z" finished-at="2018-01-18T16:30:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCRM -->
       </class> <!-- com.test.TestLogin -->
       <class name="com.test.TestUserManagement">
-        <test-method status="PASS" signature="userManage()[pri:0, instance:com.test.TestUserManagement@3a82f6ef]" name="userManage" duration-ms="747" depends-on-groups="login" started-at="2018-01-16T17:25:44Z" finished-at="2018-01-16T17:25:45Z">
+        <test-method status="PASS" signature="userManage()[pri:0, instance:com.test.TestUserManagement@36d4b5c]" name="userManage" duration-ms="2759" depends-on-groups="login" started-at="2018-01-18T16:30:14Z" finished-at="2018-01-18T16:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userManage -->
       </class> <!-- com.test.TestUserManagement -->
+      <class name="com.test.TestSearchRole">
+        <test-method status="FAIL" signature="searchByFunc()[pri:0, instance:com.test.TestSearchRole@7f9a81e8]" name="searchByFunc" duration-ms="203" depends-on-groups="roleManage" started-at="2018-01-18T16:30:18Z" finished-at="2018-01-18T16:30:18Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[element not visible  (Session info: chrome=63.0.3239.108)  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'ZJEH-PC', ip: '10.5.77.130', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}Session ID: 5e803635d59b8373d9a988086ed330c2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible  (Session info: chrome=63.0.3239.108)  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'ZJEH-PC', ip: '10.5.77.130', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.108, webStorageEnabled: true}Session ID: 5e803635d59b8373d9a988086ed330c2at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)at com.selenium.test.base.SeleniumUtil.doClick(SeleniumUtil.java:274)at com.selenium.test.base.SeleniumUtil.inputSelect(SeleniumUtil.java:653)at com.test.TestSearchRole.searchByFunc(TestSearchRole.java:18)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFunc -->
+        <test-method status="SKIP" signature="searchByRoleName()[pri:0, instance:com.test.TestSearchRole@7f9a81e8]" name="searchByRoleName" duration-ms="0" depends-on-groups="roleManage" started-at="2018-01-18T16:30:18Z" depends-on-methods="com.test.TestSearchRole.searchByFunc" finished-at="2018-01-18T16:30:18Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestSearchRole.searchByRoleName()[pri:0, instance:com.test.TestSearchRole@7f9a81e8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestSearchRole.searchByRoleName()[pri:0, instance:com.test.TestSearchRole@7f9a81e8] depends on not successfully finished methodsat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:878)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByRoleName -->
+      </class> <!-- com.test.TestSearchRole -->
       <class name="com.test.TestAssignRole">
-        <test-method status="PASS" signature="assignRole()[pri:0, instance:com.test.TestAssignRole@100fc185]" name="assignRole" duration-ms="534" depends-on-groups="userManage, login" started-at="2018-01-16T17:25:45Z" finished-at="2018-01-16T17:25:45Z">
+        <test-method status="PASS" signature="assignRole()[pri:0, instance:com.test.TestAssignRole@6d00a15d]" name="assignRole" duration-ms="596" depends-on-groups="userManage, login" started-at="2018-01-18T16:30:17Z" finished-at="2018-01-18T16:30:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignRole -->
       </class> <!-- com.test.TestAssignRole -->
-    </test> <!-- Test -->
+      <class name="com.test.TestRoleManagement">
+        <test-method status="PASS" signature="roleManage()[pri:0, instance:com.test.TestRoleManagement@396a51ab]" name="roleManage" duration-ms="352" depends-on-groups="assignRole" started-at="2018-01-18T16:30:17Z" finished-at="2018-01-18T16:30:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roleManage -->
+      </class> <!-- com.test.TestRoleManagement -->
+    </test> <!-- TestUser -->
   </suite> <!-- TestCRM -->
 </testng-results>

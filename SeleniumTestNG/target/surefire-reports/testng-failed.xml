@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestCRM]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test verbose="0" name="TestUser(failed)">
+    <classes>
+      <class name="com.test.TestRoleManagement">
+        <methods>
+          <include name="roleManage"/>
+        </methods>
+      </class> <!-- com.test.TestRoleManagement -->
+      <class name="com.test.TestUserManagement">
+        <methods>
+          <include name="userManage"/>
+        </methods>
+      </class> <!-- com.test.TestUserManagement -->
+      <class name="com.test.TestLogin">
+        <methods>
+          <include name="getdriver"/>
+          <include name="loginCRM"/>
+        </methods>
+      </class> <!-- com.test.TestLogin -->
+      <class name="com.test.TestSearchRole">
+        <methods>
+          <include name="searchByRoleName"/>
+          <include name="searchByFunc"/>
+        </methods>
+      </class> <!-- com.test.TestSearchRole -->
+      <class name="com.test.TestAssignRole">
+        <methods>
+          <include name="assignRole"/>
+        </methods>
+      </class> <!-- com.test.TestAssignRole -->
+    </classes>
+  </test> <!-- TestUser(failed) -->
+</suite> <!-- Failed suite [TestCRM] -->
